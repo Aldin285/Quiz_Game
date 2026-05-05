@@ -17,3 +17,12 @@
     align-items: center;
     justify-content: center;
   }
+
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .answerSelect {
+      gap: 1.5em;
+      padding-right: 0.75em;
+      padding-left: 0.75em;
+    }
+  }

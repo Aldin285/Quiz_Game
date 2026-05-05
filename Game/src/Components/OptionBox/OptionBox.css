@@ -1,5 +1,5 @@
 button {
-    padding: 5px;
+    padding: 0.5rem 2rem;
     margin: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -17,4 +17,21 @@ button {
     align-items: center;
 
     overflow-wrap: break-word;
+}
+
+@media (max-width: 1115px) {
+    button {
+        width: 11em;
+        font-size: 110%;
+    }
+}
+
+@media (max-width: 520px) {
+    button {
+        width: 10em;
+        height: 3.5em;
+        font-size: 80%;
+        padding: 0.5rem 2rem;
+        min-height: 48px;
+    }
 }

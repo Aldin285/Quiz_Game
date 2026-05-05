@@ -26,7 +26,7 @@ import Button from './Components/Button/Button.vue';
   }
   // Liste des questions et la limite de questions à afficher
   let selectedQuestions = reactive([]);
-  const questionLimits = 5;
+  const questionLimits = 1;
 
   // Sélection des questions
   function selectQuestions() {
@@ -117,13 +117,17 @@ import Button from './Components/Button/Button.vue';
       <div v-if="displayEndScreen" class="getStarted" key="end">
         <h1>Your final score is :</h1>
         <h1> {{ totalScore }}</h1>
-        <button @click="ResetGame"  class="button-82-pushable">
+        <!-- <button @click="ResetGame"  class="button-82-pushable">
         <span class="button-82-shadow"></span>
         <span class="button-82-edge"></span>
         <span class="button-82-front text">
           Play again
         </span>
-        </button>
+        </button> -->
+        <Button
+          text="Play again"
+          @click="ResetGame"
+        />
       </div>
     </transition>
 

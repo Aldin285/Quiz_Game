@@ -7,11 +7,16 @@
         transition: background-color 0.3s;
         width: auto;
         height: auto;
+        /* color: yellow; */
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important; 
+    }
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;    
+    h2 {
+        width: 100%;
+        text-align: center;
     }
 
     img {
@@ -22,4 +27,16 @@
         min-height: 15em;
         
         border-radius: 3%;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+        img {
+            max-width: 90vw;
+            max-height: 45vw;
+            min-width: 250px;
+            min-height: 200px;
+            width: auto;
+            height: auto;
+        }
     }

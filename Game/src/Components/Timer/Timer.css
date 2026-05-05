@@ -71,3 +71,28 @@
   /* Flips the svg and makes the animation to move left-to-right */
   transform: scaleX(-1);
 }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .timer-root {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .container {
+    height: 110px;
+    width: 110px;
+  }
+
+  .time-elapsed-path {
+    stroke-width: 5px;
+  }
+
+  .time-left-container {
+    font-size: 50px;
+  }
+
+  .time-left-path {
+    stroke-width: 5px;
+  }
+}

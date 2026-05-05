@@ -78,19 +78,42 @@
 	filter: grayscale(0.12);
 }
 
-@media (min-width: 768px) {
-	.content-row {
-		gap: 0px;
-		padding: 12px 20px;
-	}
+.content-row {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0px;
+	padding: 12px 20px;
+}
 
-	.label-wrap {
-		min-width: 10px;
-		padding: 10px 10px;
+.flower-icon {
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+	flex-shrink: 0;
+}
+
+.label {
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	font-family: 'Times New Roman', serif;
+	font-size: 2rem;
+	line-height: 1;
+	letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+	.content-row {
+		padding: 10px 16px;
 	}
 
 	.flower-icon {
-		width: 50px;
-		height: 50px;
+		width: 28px;
+		height: 28px;
+	}
+
+	.label {
+		font-size: 1.5rem;
 	}
 }

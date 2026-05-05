@@ -18,3 +18,16 @@
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .score-root {
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .container {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}

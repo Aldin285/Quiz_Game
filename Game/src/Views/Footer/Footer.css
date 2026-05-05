@@ -11,3 +11,11 @@
     max-width: 1000px;
     margin: 0 auto;
   }
+
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .app-footer {
+      padding: 0.75rem 0.5rem;
+      margin-top: 1.5rem;
+    }
+  }
